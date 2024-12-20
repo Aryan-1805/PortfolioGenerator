@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Generator allows you to create a professional portfolio by filling in your details, including name, title, bio, skills, email, and a profile picture. Download your custom portfolio as an HTML file.">
+    <title>Portfolio Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Portfolio Generator</h1>
+            <p class="website-description">
+                Create your professional portfolio by filling in your details below. Customize your name, title, bio, skills, email, and upload a profile image. Once completed, you can preview and download your portfolio as an HTML file.
+            </p>
+            <form id="portfolioForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Professional Title</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills (comma-separated)</label>
+                    <input type="text" id="skills" placeholder="HTML, CSS, JavaScript">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Profile Image</label>
+                    <input type="file" id="image" accept="image/*">
+                </div>
+                <button type="submit">Generate Portfolio</button>
+            </form>
+        </div>
+        <div class="preview-section" id="preview">
+            <h2>Preview</h2>
+            <div id="portfolioPreview"></div>
+            <button id="downloadBtn" style="display:none;">Download Portfolio</button>
+        </div>
+    </div>
+
+    <!-- Footer with Copyright -->
+    <footer>
+        <p>© 2024 Aryan Bhutyal. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
